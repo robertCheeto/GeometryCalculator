@@ -32,7 +32,13 @@ public class GeometryCalculator {
         double triangleArea = (triangleBase * triangleHeight * (1.0/2.0));
         System.out.printf("The area of that Triangle would be %.2f square units.\n", triangleArea);
         double triangleHypotenuse = Math.sqrt(Math.pow(triangleBase, 2) + Math.pow(triangleHeight, 2));
-        System.out.printf("The hypotenuse of the Triangle would be %.2f units.", triangleHypotenuse);
+        System.out.printf("The hypotenuse of the Triangle would be %.2f units.\n\n", triangleHypotenuse);
+
+        // Step 5 - calculate sum of total Area
+        double totalArea = circleArea + rectangleArea + triangleArea;
+
+        System.out.println("********************************************");
+        System.out.printf("The total area calculated is: %.2f square units.", totalArea);
 
     }
 }
