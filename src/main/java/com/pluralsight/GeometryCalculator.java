@@ -29,8 +29,8 @@ public class GeometryCalculator {
         // Step 4 - Calculate Triangle Area with Math.sqrt() to find the Hypotenuse
         // area = (1/2) * base * height
         System.out.println("Calculating the Area of a Triangle with a base of " + triangleBase + " units and a height of " + triangleHeight + " units.");
-        double triangleArea = (triangleBase * triangleHeight * (1/2));
-        System.out.printf("The area of that Triangle would be %.2f units.\n", triangleArea);
+        double triangleArea = (triangleBase * triangleHeight * (1.0/2.0));
+        System.out.printf("The area of that Triangle would be %.2f square units.\n", triangleArea);
         double triangleHypotenuse = Math.sqrt(Math.pow(triangleBase, 2) + Math.pow(triangleHeight, 2));
         System.out.printf("The hypotenuse of the Triangle would be %.2f units.", triangleHypotenuse);
 
